@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Design tokens are introduced in phase 7 (spec section 8). */
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --muted: #5c5c5c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212;
+    --foreground: #ededed;
+    --muted: #a3a3a3;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-variant-numeric: tabular-nums;
+}

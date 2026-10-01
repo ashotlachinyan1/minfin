@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "ArmBudget — Armenia's state budget and public debt",
+    "description": "Independent interactive analysis of the Republic of Armenia's state budget and public debt"
+  },
+  "locales": { "hy": "Հայերեն", "ru": "Русский", "en": "English" },
+  "home": {
+    "languageNav": "Language",
+    "title": "ArmBudget",
+    "tagline": "Armenia's state budget and public debt: plan versus actual, every figure linked to its source.",
+    "placeholder": "The site is under development."
+  },
+  "footer": {
+    "disclaimer": "Independent analytical project. Primary data: Ministry of Finance of RA, Statistical Committee of RA, Central Bank of Armenia. In case of discrepancy, the official document prevails."
+  }
+}
