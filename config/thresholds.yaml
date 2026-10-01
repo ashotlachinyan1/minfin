@@ -1,0 +1,23 @@
+# Execution status thresholds (PROJECT_SPEC.md 3.3).
+# exec_rate = actual / plan_base * 100. Bounds are percentages; lower bound inclusive.
+execution_status:
+  red:    { max: 80 }             # < 80%: strong underfunding
+  yellow: { min: 80, max: 95 }    # 80-95%
+  green:  { min: 95, max: 105 }   # 95-105%
+  blue:   { min: 105 }            # > 105%: overfunding
+
+# Cross-source reconciliation (PROJECT_SPEC.md 7.2, CLAUDE.md rule 6).
+reconciliation:
+  warn_pct: 5
+  fail_pct: 10
+
+# Internal identity tolerances (PROJECT_SPEC.md 7.1), percent.
+identities:
+  programs_sum_to_total: 0.1
+  classifications_agree: 0.1
+  deficit_and_financing: 0.5
+  debt_components: 0.1
+  residency_split: 0.1
+
+# Seed reproduction tolerance (PROJECT_SPEC.md 4.4), percent.
+seed_tolerance_pct: 0.5

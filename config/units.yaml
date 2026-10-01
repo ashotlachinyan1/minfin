@@ -1,0 +1,15 @@
+# Unit definitions (PROJECT_SPEC.md 6, CLAUDE.md rule 3).
+# All amounts are stored in AMD. A parser must determine the source unit explicitly
+# (table header or a document-specific rule below) and fail if it cannot.
+factors_to_amd:
+  AMD: 1
+  thousand_AMD: 1000
+  million_AMD: 1000000
+  billion_AMD: 1000000000
+
+# Header markers that identify the unit. Filled in phase 2 from real documents only;
+# every entry must cite the document it was observed in.
+header_markers: []
+
+# Document-specific overrides: {source_id, unit, reason, source_page}. Phase 2+.
+document_rules: []
